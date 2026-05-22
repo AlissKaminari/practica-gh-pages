@@ -58,7 +58,7 @@ body {
     left: 100%;
 }
 .navLink:hover{
-    color: #B39977;
+    color: #ffffff;
     background: rgba(255, 255, 255, 0.25);
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0, 0, 0,0.2);
