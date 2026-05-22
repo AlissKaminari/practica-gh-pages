@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #fdfdfd;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.header {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0px 25px;
+}
+
+.navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    background: #684f36;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 50px;
+    border: 1px solid (#342519 0.5);
+    box-shadow: 0 8px 32px rgba(23, 23, 32, 0.8), inset 0 1px 0 
+    rgba(255, 255, 255, 0.3);
+}
+.navLink {
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+.navLink::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5));
+    transition: left 0.5s;
+}
+.navLink:hover::before{
+    left: 100%;
+}
+.navLink:hover{
+    color: #B39977;
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0,0.2);
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 600;   
+    color: #342519;
+}
+.eve{
+    color: #3d251e;
+    text-align: center;
+}
+p{
+    color: black;
+}
+
+.hero {
+    background-color: #c19a6b;
+    color: white;
+    padding: 60px 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: auto;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4b2e2e;
+}
+
+footer {
+    background-color: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Colores basados en la imagen del líder */
+:root {
+    --cafe-oscuro: #5d4037;
+    --cafe-medio: #795548;
+    --beige-fondo: #c19a6b; /* El tono de fondo de tu imagen */
+    --blanco-crema: #f5f5f5;
+}
+
+body {
+    background-color: var(--beige-fondo);
+    font-family: 'Times New Roman', Times, serif; /* Fuente similar a la de la imagen */
+    margin: 0;
+    color: #2e1a12;
+}
+
+/* Encabezado igual al del líder */
+.header-principal {
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo-empresa {
+    font-size: 2.5rem;
+    color: #3e2723;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.navegacion-principal {
+    background-color: var(--cafe-oscuro);
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 50px; /* Bordes muy redondeados como la imagen */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.navegacion-principal a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navegacion-principal a.activo {
+    text-decoration: underline;
+}
+
+/* Diseño de tus servicios */
+.contenedor-servicios {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.grid-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tarjeta-cafe {
+    background-color: rgba(93, 64, 55, 0.1); /* Café muy transparente */
+    border: 2px solid var(--cafe-oscuro);
+    padding: 30px;
+    width: 250px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-cafe:hover {
+    background-color: var(--cafe-oscuro);
+    color: white;
+}
+
+.icono-cafe {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-principal {
+    background-color: var(--cafe-oscuro);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
